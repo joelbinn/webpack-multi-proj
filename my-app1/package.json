@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A webpack starter for angular 2",
   "scripts": {
+    "preinstall": "npm link ../common",
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start --auto-watch",
     "build": "rm -rf dist && karma start --single-run --no-auto-watch && rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "npm link ../common && typings install"
+    "postinstall": "typings install"
   },
   "license": "MIT",
   "dependencies": {
@@ -20,7 +21,8 @@
     "core-js": "^2.4.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.6",
-    "zone.js": "0.6.12"
+    "zone.js": "0.6.12",
+    "common": "file:../common"
   },
   "devDependencies": {
     "css-loader": "^0.23.1",
