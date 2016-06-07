@@ -1,5 +1,4 @@
 import { Component, Type } from '@angular/core';
-import '../../public/css/styles.css';
 import {hello} from "common/hello";
 
 @Component({

@@ -4,7 +4,7 @@
   "description": "A webpack starter for angular 2",
   "scripts": {
     "preinstall": "npm link ../common",
-    "start": "webpack-dev-server --inline --progress --port 8080",
+    "start": "webpack-dev-server --inline --progress --port 23280",
     "test": "karma start --auto-watch",
     "build": "rm -rf dist && karma start --single-run --no-auto-watch && rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "postinstall": "typings install"
