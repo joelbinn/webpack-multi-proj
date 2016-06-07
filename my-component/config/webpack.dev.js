@@ -3,12 +3,14 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
 
+var port = 23280
+
 module.exports = webpackMerge(commonConfig, {
   devtool: 'cheap-module-eval-source-map',
 
   output: {
     path: helpers.root('dist'),
-    publicPath: 'http://localhost:23180/',
+    publicPath: 'http://localhost:'+port+'/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
@@ -20,6 +22,6 @@ module.exports = webpackMerge(commonConfig, {
   devServer: {
     historyApiFallback: true,
     stats: 'minimal',
-    port: 23180
+    port: port
   }
 });
