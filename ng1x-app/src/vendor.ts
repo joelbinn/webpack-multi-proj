@@ -3,7 +3,7 @@ import 'angular/angular';
 import 'jquery/dist/jquery';
 // Funky stuff
 import 'lodash/lodash';
-import 'ramda/dist/ramda';
+import 'ramda/dist/ramda.js';
 // RxJS
 import 'rxjs';
 // Bootstrap
