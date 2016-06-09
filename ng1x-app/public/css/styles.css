@@ -1,0 +1,17 @@
+body {
+    background: #b9def0;
+}
+
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+
+.margin-left-sm {
+    margin-left: 6px;
+}
+.margin-left-lg {
+    margin-left: 18px;
+}
