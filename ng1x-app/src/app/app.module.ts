@@ -1,3 +1,4 @@
-/// <reference path="../../typings/index.d.ts" />
+import * as angular from 'angular';
+
 export const AppModule:ng.IModule = angular.module('app', []);
-console.debug('Initialized appModule:',AppModule);
+console.debug('Initialized AppModule:',AppModule);

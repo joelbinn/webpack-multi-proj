@@ -1,4 +1,4 @@
-/// <reference path="../typings/index.d.ts" />
+import * as angular from 'angular';
 import './app/index';
 import '../public/css/styles.css';
 

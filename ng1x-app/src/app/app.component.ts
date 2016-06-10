@@ -1,7 +1,6 @@
-/// <reference path="../../typings/index.d.ts" />
 import {AppModule} from "./app.module";
-import 'lodash/lodash';
-import 'ramda/dist/ramda';
+import * as R from 'ramda';
+import * as _ from 'lodash';
 
 
 class Controller {
@@ -48,6 +47,7 @@ class AppComponent implements ng.IComponentOptions {
 
 export const myApp = AppModule.component('myApp', new AppComponent());
 _.each([1,2,3], e => console.log('element:',e));
-// TODO fixa R.forEach(e => console.log('element:',e), [11,22,33]);
-console.debug('Initialized myApp', myApp);
+// TODO fixa
+R.forEach(e => console.log('element:',e), [11,22,33]);
+console.debug('Initialized app.component', myApp);
 

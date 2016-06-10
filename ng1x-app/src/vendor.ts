@@ -1,9 +1,6 @@
 // Angular 1.x
 import 'angular/angular';
 import 'jquery/dist/jquery';
-// Funky stuff
-import 'lodash/lodash';
-import 'ramda/dist/ramda.js';
 // RxJS
 import 'rxjs';
 // Bootstrap

@@ -1,4 +1,3 @@
-/// <reference path="../../../typings/index.d.ts" />
 import {AppModule} from '../app.module';
 
 class Controller {
